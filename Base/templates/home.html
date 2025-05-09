@@ -1,0 +1,230 @@
+{% load static%}
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio </title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpeg">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>`
+
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">My Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About Me <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#Projects" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#Contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex s-center items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Hi, I'm</h6>
+                <h1 class="t-white">Aasif Ansari</h1>
+                <h4 class="poppinss">Full Stack Developer</h4>
+                <a href="{% static 'pdf/aasif01.pdf' %}"  target="_blank">
+                    <button class="btn poppins">Resume</button></a>
+
+                <a class="btn live poppins" id="hireme" href="#Contact"
+                    >Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+
+                <img src="{% static 'images/dev.png'%}" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="t-center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around ">
+            <div class=" about-left flex s-center items-center">
+                <!-- Here in src replade the given link with your secondary image link -->
+                <img src="{%static 'images/animSoft.png'%}" alt="" style="width: 60%;">
+            </div>
+
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">Aasif Ansari</h1>
+                    <p class="t-white poppins">My name is Aasif Ansari. I’m a recent B.tech graduate in Computer Science & Engineering with specialization in data science.
+
+
+                        I am fresher, I’m passionate about creating quality products that meet all of the customer’s needs, and I love learning new techniques and technologies that allow me to make that happen.While I generally enjoy all of my job, the part I find most draining is estimating projects for customers. I don’t mind doing it, but I enjoy actually creating the software much more.</p>
+                    <a class="btn " id="hireme"
+                        href="#Contact">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <div class="services-container flex s-around h-50">
+        <div class=" skills-left flex s-center items-center">
+            <img src="{%static 'images/ani.png'%}" alt="" style="width: 60%;">
+        </div>
+
+        <div class="skills-right flex items-center">
+            <div class="skillss-container">
+                <div class="java bar p-relative"><span class="bar-content left t-white"> Core Python</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+                <div class="html bar p-relative"><span class="bar-content left t-white">HTML</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+                <div class="css bar p-relative"><span class="bar-content left t-white">C</span><span
+                        class="bar-content right-skills t-white">80%</span></div>
+                <div class="css bar p-relative"><span class="bar-content left t-white">MySql</span><span
+                                class="bar-content right-skills t-white">80%</span></div>
+                <div class="js bar p-relative"><span class="bar-content left t-white">Data Structure and Algorithm</span><span
+                        class="bar-content right-skills t-white">70%</span></div>
+                <div class="python bar p-relative"><span class="bar-content left t-white">CSS</span><span
+                        class="bar-content right-skills t-white">50%</span></div>
+                <div class="mysql bar p-relative"><span class="bar-content left t-white">Java</span><span
+                        class="bar-content right-skills t-white">40%</span></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="Projects">
+        <h1 class=" t-center my-2 t-white f-2">Projects</h1>
+        <div class="projects-container flex s-center">
+            <div class="projects-item flex f-col s-center items-center">
+
+                <h1 class="t-white poppins">E-Library Management</h1>
+                <p class="t-white poppins"> I built an e-library project using the Django framework, designed to provide users with an intuitive platform for browsing, searching, and borrowing digital books. The project features secure user authentication, a user-friendly interface, and efficient book management. With Django’s backend, I implemented a functional admin panel for managing books, users, and transactions. This project showcases my ability to create scalable web applications while providing an optimal user experience.</p>
+                <div class="buttons flex s-around">
+                    <a href=""
+                        target="_blanks" class="btn mx-1 m-top">GitHub</a>
+                    <a  onclick="alert('No link')" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+
+                <h1 class="t-white poppins">My Portfolio</h1>
+                <p class="t-white poppins">I developed this portfolio project using the Django framework, aimed at showcasing my skills, experience. The platform features a clean, responsive design with sections for about me, project highlights, skills, and contact information. Using Django, I implemented secure authentication, dynamic content management, allowing easy updates to the portfolio. This project highlights my ability to build professional, interactive websites while demonstrating my expertise in web development with Django.</p>
+                <div class="buttons flex s-around">
+                    <a href="" target="_blanks"
+                        class="btn mx-1 m-top">GitHub</a>
+                    <a  onclick="alert('No Link')" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+
+         </div>
+
+        </div>
+        <div class="projects-container flex s-center">
+            <div class="projects-item flex f-col s-center items-center">
+
+                <h1 class="t-white poppins">Covid-19 Analysis</h1>
+                <p class="t-white poppins"> In my COVID-19 Data Analysis project, I utilized Python's powerful libraries—Pandas for data manipulation, NumPy for numerical computations, and Matplotlib for data visualization—to explore and interpret the pandemic's impact. By cleaning and preprocessing real-world datasets. This project not only reinforced my proficiency in data analysis and visualization techniques but also demonstrated my ability to derive meaningful conclusions from large datasets, a skill crucial for data-driven decision-making.</p>
+                <div class="buttons flex s-around">
+                    <a href=""
+                        target="_blanks" class="btn mx-1 m-top">GitHub</a>
+                    <a  onclick="alert('No link')" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+
+                <h1 class="t-white poppins">Google Play Store Analysis</h1>
+                <p class="t-white poppins">In my Google Play Store Apps Analysis project, I employed Python's robust libraries—Pandas for data manipulation, NumPy for numerical computations, and Matplotlib for data visualization. By cleaning and preprocessing a dataset containing over 10,000 apps, I conducted exploratory data analysis to uncover trends in app categories, user ratings, download counts, and pricing strategies. This project  also demonstrated my ability to extract meaningful insights from large datasets.</p>
+                <div class="buttons flex s-around">
+                    <a href="" target="_blanks"
+                        class="btn mx-1 m-top">GitHub</a>
+                    <a  onclick="alert('No Link')" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+
+         </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="Contact" class="m-b-1">
+        <h1 class=" t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-around items-centers">
+            <div class="form" id="contactForm">
+                <form method="post" >
+                    {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+                    </div>
+
+                    <div class="email form-div">
+                        <input type="email" name="email" id="" class="poppins" placeholder="Enter Your Email"
+                            required>
+                    </div>
+
+                    <div class="phone form-div">
+                        <input type="phone" name="number" id="" class="poppins" placeholder="Enter Your Phone"
+                            required>
+                    </div>
+
+                    <div class="textarea form-div">
+                        <textarea name="content" id="textarea" cols="30" rows="10" class="poppins"
+                            placeholder="Enter Messages"></textarea>
+                    </div>
+                    <button type="submit" class="btn poppins" id="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="poppinss">Home</a></li>
+            <li><a href="#about" class="poppinss">About</a></li>
+            <li><a href="#skills" class="poppinss">Skills</a></li>
+            <li><a href="#Projects" class="poppinss">Projects</a></li>
+            <li><a href="#portfolio" class="poppinss">Portfolio</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome ">
+            <a href="https://www.linkedin.com/in/aasif05" target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="https://www.github.com/asif0808" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+                <a href="https://www.instagram.com/aasif.015/" target="_blank">
+                    <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+
+        </ul>
+        <p class="t-center my-2 poppins">&copy; All Rights Reserved - <span class="cpy-white poppins">Aasif Ansari
+                </span></p>
+
+    </footer>
+
+</body>
+</html>
